@@ -36,13 +36,24 @@ table {
     width: 100%;
 }
 
-table,th{
+table, th, td{
     border: 1px solid black;
 }
 
 th{
     text-align: center;
     height: 35px;
+    vertical-align: middle;
+}
+
+td{
+	height: 35px;
+    vertical-align: middle;
+
+}
+
+td.nomor{
+	text-align: center;
     vertical-align: middle;
 }
 
