@@ -1,0 +1,10 @@
+QUERY :
+MariaDB [db_blog]> select "posts.title";
+MariaDB [db_blog]> select "posts.users.username";
+MariaDB [db_blog]> select* from comments;
+
+ex :
+MariaDB [db_blog]> select posts.title, users.username, 
+comments.comment from posts posts inner join comments 
+comments on posts.id=comments.id inner join users 
+users on users.id=posts.id;
